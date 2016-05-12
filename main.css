@@ -17,8 +17,15 @@ section:first-child {
   background-image: url('pics/field.jpg');
   background-size: cover;
   background-position: center center;
+  -webkit-filter: grayscale(70%);
+	filter: grayscale(70%);
   box-shadow: 8px 0 20px #000;
   min-height: 500px;
+}
+
+section:first-child:active {
+  -webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
 }
 
 section:first-child h2 {
@@ -26,8 +33,22 @@ section:first-child h2 {
   text-shadow: 1px 1px 2px yellow;
 }
 
+section:first-child p {
+  background-color: rgba(0,0,0,.8);
+  padding: 2% 10%;
+  margin: 0;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+section:first-child a {
+  color: #fff;
+}
+
 section#about {
-  height: 750px;
+  min-height: 750px;
+  padding-bottom: 50px;
 }
 
 section#about h2 {
@@ -39,11 +60,16 @@ section#contact {
   padding: 10%;
 }
 
+section#contact a {
+  color: #fff;
+}
+
 h1 {
   padding: 15% 10% 0 10%;
   margin: 0;
   text-align: center;
   font-size: 3em;
+  font-weight: bolder;
   color: #fff;
   text-shadow: 2px 2px 8px #000;
 }
