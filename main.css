@@ -57,6 +57,8 @@ section#about h2 {
 
 section#contact {
   background-color: #000;
+  background-image: url('pics/aug2016champs.jpg');
+  background-size: cover;
   padding: 10%;
 }
 
